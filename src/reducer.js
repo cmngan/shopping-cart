@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
-import weather from './reducers/weather'
+import cart from './reducers/cart'
 
 export default combineReducers({
-  weather
+  cart
 })
