@@ -1,5 +1,6 @@
 // import React from 'react'
 import styled, { css } from 'styled-components'
+import { generalCss } from '../Theme'
 const Flex = styled.div`
   display: flex;
   ${p => p.flexWrap && css`flex-wrap: wrap`}
@@ -7,6 +8,8 @@ const Flex = styled.div`
   ${p => p.width && css`width: ${p.width}`};
   ${p => p.height && css`height: ${p.height}`};
   ${p => p.bgColor && css`background-color: ${p.bgColor}`};
+
+  ${generalCss}
 `
 
 const Row = styled(Flex)`

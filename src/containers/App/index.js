@@ -1,13 +1,13 @@
 import React from 'react'
-import { Col } from 'components'
+import { Row } from 'components'
 import CardDetails from '../CardDetails'
 import Cart from '../Cart'
 
 export default ()  => {
   return (
-    <Col>
+    <Row AllL>
       <Cart />
       <CardDetails />
-    </Col>
+    </Row>
   )
 }

@@ -1,19 +1,6 @@
 import { css } from 'styled-components'
 
-export const fontCss = css`
-  font-family: ${p => p.theme.fontFamily};
 
-  font-size: ${p => p.theme.fontSizeM};
-  ${p => p.XS && css`font-size: ${p.theme.fontSizeXS}`}
-  ${p => p.S && css`font-size: ${p.theme.fontSizeS}`}
-  ${p => p.L && css`font-size: ${p.theme.fontSizeL}`}
-  ${p => p.XL && css`font-size: ${p.theme.fontSizeXL}`}
-
-  ${p => p.bold && css`font-weight: bold`}
-  ${p => p.underline && css`text-decoration: underline;`}
-  ${p => p.underlineColor && css`text-decoration-color: ${p.underlineColor};`}
-  ${p => p.newline && css`white-space: pre-wrap;`}  
-`
 
 export const generalCss = css`
   ${p => css`
@@ -65,7 +52,7 @@ export const spacingCss = css`
       { key: 'L', value: 'L', cssKey: 'margin', prefix: 'Margin' },
       { key: 'XL', value: 'XL', cssKey: 'margin', prefix: 'Margin' },
     ].map( ({ key, value, cssKey, prefix = '' }) => css`
-      ${p[prefix + key] && `${cssKey}: ${p.theme['spacing' + value]};`}
+      ${p[prefix + 'All' + key] && `${cssKey}: ${p.theme['spacing' + value]};`}
       ${p[prefix + 'V' + key] && `${cssKey}-top: ${p.theme['spacing' + value]}; ${cssKey}-bottom: ${p.theme['spacing' + value]};`}
       ${p[prefix + 'H' + key] && `${cssKey}-left: ${p.theme['spacing' + value]}; ${cssKey}-right: ${p.theme['spacing' + value]};`}
       ${p[prefix + 'Left' + key] && `${cssKey}-left: ${p.theme['spacing' + value]};`}
