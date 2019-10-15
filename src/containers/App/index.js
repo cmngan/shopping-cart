@@ -1,9 +1,13 @@
 import React from 'react'
+import { Col } from 'components'
+import CardDetails from '../CardDetails'
+import Cart from '../Cart'
 
 export default ()  => {
   return (
-    <div>
-      Test
-    </div>
+    <Col>
+      <Cart />
+      <CardDetails />
+    </Col>
   )
 }

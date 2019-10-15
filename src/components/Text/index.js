@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-export default styled.p`
+export const Text = styled.p`
   margin: 0px;
   padding: 4px;
   ${p => p.onClick && css`cursor: pointer;`}
