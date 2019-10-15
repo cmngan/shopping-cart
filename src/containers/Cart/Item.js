@@ -17,12 +17,12 @@ const Item = ({
           <Text L bold BottomXS>{name}</Text>
           <Text secondary S>{'#' + id}</Text>
         </Col>
-        <Row centerVertical flex={1}>
+        <Row centerVertical flex={1} HS>
           <Button onClick={() => changeItemUnit(id, unit-1)} disabled={!unit}>−</Button>
           <TextInput MarginHS size={3} value={unit} center disabled />
           <Button onClick={() => changeItemUnit(id, unit+1)} disabled={unit >= 99}>+</Button>
         </Row>
-        <Col flex={1}>
+        <Col flex={1} HS>
           <Text>{toPrice(price)}</Text>
         </Col>
         <Button onClick={() => removeItem(id)}>✕</Button>

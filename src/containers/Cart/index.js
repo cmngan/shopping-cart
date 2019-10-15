@@ -3,15 +3,17 @@ import { connect } from 'react-redux'
 
 import Item from './Item'
 import Subtotal from './Subtotal'
-import { Col, Row, Text } from 'components'
+import { Col, Row, Text, Button } from 'components'
 
 const Cart = ({ cartItemIds })  => {
   return (
     <Col flex={1} VM HM>
-      <Text h1>Shopping Cart</Text>
-      {cartItemIds.map((id, index) => <Item index={index} key={id} /> )}
+      <Col flex={1}>
+        <Text h1>Shopping Cart</Text>
+        {cartItemIds.map((id, index) => <Item index={index} key={id} /> )}
+      </Col>
       <Row spaceBetween TopXL>
-        <Text hyperlink>← Continue Shopping</Text>
+        <Button hyperlink onClick={() => alert('Not ready yet.')}>← Continue Shopping</Button>
         <Subtotal />
       </Row>
     </Col>
