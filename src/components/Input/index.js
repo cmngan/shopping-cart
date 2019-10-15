@@ -1,7 +1,10 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import { generalCss, fontCss } from '../Theme'
 
 export const TextInput = styled.input`
-  border: 1px solid #aaa;
+  ${generalCss}
+  ${fontCss}
+  border: 1px solid ${p => p.theme.borderColor};
   border-radius: 4px;
   box-shadow: 0;
   padding: 8px 12px;

@@ -1,0 +1,1 @@
+export const toPrice = price => '$' + price.toFixed(2)

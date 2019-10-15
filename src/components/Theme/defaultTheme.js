@@ -12,10 +12,12 @@ const theme = {
   
   errorColor: '#E8666D',
   warningColor: '#f68e56',
-  borderColor: '#556672',
+  hyperlinkColor: 'blue',
+  disabledColor: '#cecece',
+  borderColor: '#cecece',
   white: '#ffffff',
   black: '#333333',
-  
+
   spacingXXS: '2px',
   spacingXS: '4px',
   spacingS: '8px',
@@ -31,11 +33,11 @@ const theme = {
   fontSizeL: '16px',
   fontSizeXL: '18px',
 
-  iconSizeXS: '10px',
-  iconSizeS: '12px',
-  iconSizeM: '14px',
-  iconSizeL: '16px',
-  iconSizeXL: '18px',
+  imageSizeXS: '15px',
+  imageSizeS: '30px',
+  imageSizeM: '60px',
+  imageSizeL: '90px',
+  imageSizeXL: '120px',
 
 }
 

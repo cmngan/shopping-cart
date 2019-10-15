@@ -1,6 +1,21 @@
 import { css } from 'styled-components'
 
+export const fontCss = css`
+  font-family: ${p => p.theme.fontFamily};
 
+  font-size: ${p => p.theme.fontSizeM};
+  ${p => p.XS && css`font-size: ${p.theme.fontSizeXS}`}
+  ${p => p.S && css`font-size: ${p.theme.fontSizeS}`}
+  ${p => p.L && css`font-size: ${p.theme.fontSizeL}`}
+  ${p => p.XL && css`font-size: ${p.theme.fontSizeXL}`}
+
+  ${p => p.bold && css`font-weight: bold;`}
+  ${p => p.underline && css`text-decoration: underline;`}
+  ${p => p.underlineColor && css`text-decoration-color: ${p.underlineColor};`}
+  ${p => p.newline && css`white-space: pre-wrap;`}  
+
+  ${p => p.center && css`text-align: center`}
+`
 
 export const generalCss = css`
   ${p => css`
@@ -19,6 +34,8 @@ export const colorCss = css`
     ${p.white && `color: ${p.theme.white}`}
     ${p.black && `color: ${p.theme.black}`}
     ${p.error && `color: ${p.theme.errorColor}`}
+    ${p.hyperlink && `color: ${p.theme.hyperlinkColor}`}
+    ${p.disabled && css`color: ${p.theme.disabledColor}`}
     ${p.color && `color: ${p.color}`}
 
     ${p.bgPrimary && `background-color: ${p.theme.bgColorPrimary}`}

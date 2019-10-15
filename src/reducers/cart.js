@@ -1,7 +1,9 @@
 import {
   CART_REMOVE_ITEM,
-  CART_EDIT_ITEM
+  CART_EDIT_ITEM_UNIT
 } from '../actions/actionTypes'
+
+import { changeArrayByIndex, removeArrayElement } from 'util/immutable'
 
 import food1 from 'resources/food1.png'
 import food2 from 'resources/food2.png'
@@ -36,10 +38,14 @@ const initialState = {
 const ACTION_HANDLERS = {
   [CART_REMOVE_ITEM]: (state, action) => ({
     ...state,
+    items: removeArrayElement(state.items, state.items.findIndex(({id}) => action.payload.id === id))
   }),
-  [CART_EDIT_ITEM]: (state, action) => ({
-    ...state,
-  })
+  [CART_EDIT_ITEM_UNIT]: (state, action) => {
+    return ({
+      ...state,
+      items: changeArrayByIndex(state.items, state.items.findIndex(({ id }) => action.payload.id === id), p => ({...p, unit: action.payload.unit}))
+    })
+  }
 }
 
 export default (state = initialState, action) => {
