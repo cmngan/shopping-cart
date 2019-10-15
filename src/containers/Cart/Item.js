@@ -19,7 +19,7 @@ const Item = ({
         </Col>
         <Row centerVertical flex={1} HS>
           <Button onClick={() => changeItemUnit(id, unit-1)} disabled={!unit}>−</Button>
-          <TextInput MarginHS size={3} value={unit} center disabled />
+          <TextInput MarginHS size={3} value={unit} center disabled bordered />
           <Button onClick={() => changeItemUnit(id, unit+1)} disabled={unit >= 99}>+</Button>
         </Row>
         <Col flex={1} HS>

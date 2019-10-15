@@ -6,8 +6,8 @@ import Cart from '../Cart'
 export default ()  => {
   return (
     <Row AllL height='-webkit-fill-available'>
-      <Cart />
       <CardDetails />
+      <Cart />
     </Row>
   )
 }

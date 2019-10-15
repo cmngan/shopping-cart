@@ -19,6 +19,8 @@ export const fontCss = css`
 
 export const generalCss = css`
   ${p => css`
+    ${p.width && `width: ${p.width};`}
+    ${p.height && `height: ${p.height};`}
     ${p.borderRadius && `border-radius: ${p.borderRadius}`}
     ${p.opacity && `opacity: ${p.opacity}`}
     ${colorCss}
@@ -34,7 +36,7 @@ export const colorCss = css`
     ${p.white && `color: ${p.theme.white}`}
     ${p.black && `color: ${p.theme.black}`}
     ${p.error && `color: ${p.theme.errorColor}`}
-    ${p.hyperlink && `color: ${p.theme.hyperlinkColor}`}
+    ${p.button && `color: ${p.theme.buttonColor}`}
     ${p.disabled && css`color: ${p.theme.disabledColor}`}
     ${p.color && `color: ${p.color}`}
 

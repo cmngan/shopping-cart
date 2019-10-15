@@ -4,7 +4,7 @@ const theme = {
 
   bgColor: '#2d3c47', 
   bgColorPrimary: '#1b242b',  
-  bgColorSecondary: '#364855',  
+  bgColorSecondary: '#404149',  
   
   color: 'white', 
   colorPrimary: '#f68e56',
@@ -12,7 +12,7 @@ const theme = {
   
   errorColor: '#E8666D',
   warningColor: '#f68e56',
-  hyperlinkColor: 'blue',
+  buttonColor: '#2D7AEE',
   disabledColor: '#cecece',
   borderColor: '#cecece',
   white: '#ffffff',
@@ -23,7 +23,7 @@ const theme = {
   spacingS: '8px',
   spacingM: '12px',
   spacingL: '16px',
-  spacingXL: '20px',
+  spacingXL: '30px',
 
   fontFamily: 'Roboto, sans-serif',
 

@@ -13,7 +13,7 @@ const Cart = ({ cartItemIds })  => {
         {cartItemIds.map((id, index) => <Item index={index} key={id} /> )}
       </Col>
       <Row spaceBetween TopXL>
-        <Button hyperlink onClick={() => alert('Not ready yet.')}>← Continue Shopping</Button>
+        <Button button onClick={() => alert('Not ready yet.')}>← Continue Shopping</Button>
         <Subtotal />
       </Row>
     </Col>
