@@ -7,7 +7,7 @@ import { Col, Row, Text, Button } from 'components'
 
 const Cart = ({ cartItemIds })  => {
   return (
-    <Col flex={1} VM HM MarginBottomXL>
+    <Col flex={1} BottomM HM MarginTopL>
       <Col flex={1}>
         <Text h1>Shopping Cart</Text>
         {cartItemIds.map((id, index) => <Item index={index} key={id} /> )}

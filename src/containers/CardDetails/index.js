@@ -5,7 +5,7 @@ import CardSelect from './CardSelect'
 export default ()  => {
   const [creditNumber, setCreditNumber] = useState('')
   return (
-    <Row>
+    <Row MarginTopL>
       <Col width='80px'  />
       <Col bgSecondary borderRadius='8px' AllXL width='380px' height='fit-content'>
         <Text h1 white BottomXL>Card Details</Text>
