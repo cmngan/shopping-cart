@@ -23,7 +23,7 @@ const Item = ({
           <Button onClick={() => changeItemUnit(id, unit+1)} disabled={unit >= 99}>+</Button>
         </Row>
         <Col flex={1} HS>
-          <Text>{toPrice(price)}</Text>
+          <Text>{toPrice(price*unit)}</Text>
         </Col>
         <Button onClick={() => removeItem(id)}>✕</Button>
       </Row>
