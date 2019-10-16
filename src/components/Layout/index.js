@@ -3,10 +3,11 @@ import styled, { css } from 'styled-components'
 import { generalCss } from '../Theme'
 const Flex = styled.div`
   display: flex;
+  box-sizing: border-box;
   ${p => p.flexWrap && css`flex-wrap: wrap`}
   ${p => p.flex && css`flex: ${p.flex};`}
-  ${p => p.width && css`width: ${p.width}; min-width: ${p.width};`}
-  ${p => p.height && css`height: ${p.height};`}
+  ${p => p.width && css`min-width: ${p.width};`}
+  ${p => p.height && css`min-height: ${p.height};`}
   ${p => p.bgColor && css`background-color: ${p.bgColor};`}
 
   ${generalCss}

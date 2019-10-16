@@ -19,6 +19,12 @@ export const fontCss = css`
 
 export const generalCss = css`
   ${p => css`
+    ${p.relative && `position: relative;`}
+    ${p.absolute && `position: absolute;`}
+    ${p.absTop && `top: ${p.absTop};`}
+    ${p.absBottom && `bottom: ${p.absBottom};`}
+    ${p.absLeft && `left: ${p.absLeft};`}
+    ${p.absRight && `right: ${p.absRight};`}
     ${p.width && `width: ${p.width};`}
     ${p.height && `height: ${p.height};`}
     ${p.borderRadius && `border-radius: ${p.borderRadius}`}

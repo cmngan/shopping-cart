@@ -8,8 +8,7 @@ export const TextInput = styled.input`
   background-color: transparent;
   border: 0;
   ${p => p.underline && css`
-    padding: 4px 0;
-    margin: 8px 0;
+    padding: 12px 0;
     text-decoration: none;
     border-bottom: 1px solid ${p => p.theme.borderColor} !important;
   `}
@@ -40,3 +39,4 @@ export const TextInput = styled.input`
 
 export { default as CreditCardInput } from './CreditCardInput'
 export * from './DatePicker'
+export * from './Select'
