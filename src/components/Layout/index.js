@@ -4,10 +4,10 @@ import { generalCss } from '../Theme'
 const Flex = styled.div`
   display: flex;
   ${p => p.flexWrap && css`flex-wrap: wrap`}
-  ${p => p.flex && css`flex: ${p.flex}`};
-  ${p => p.width && css`width: ${p.width}`};
-  ${p => p.height && css`height: ${p.height}`};
-  ${p => p.bgColor && css`background-color: ${p.bgColor}`};
+  ${p => p.flex && css`flex: ${p.flex};`}
+  ${p => p.width && css`width: ${p.width}; min-width: ${p.width};`}
+  ${p => p.height && css`height: ${p.height};`}
+  ${p => p.bgColor && css`background-color: ${p.bgColor};`}
 
   ${generalCss}
 `

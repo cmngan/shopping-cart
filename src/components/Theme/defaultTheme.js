@@ -4,7 +4,7 @@ const theme = {
 
   bgColor: '#2d3c47', 
   bgColorPrimary: '#1b242b',  
-  bgColorSecondary: '#364855',  
+  bgColorSecondary: '#404149',  
   
   color: 'white', 
   colorPrimary: '#f68e56',
@@ -12,16 +12,18 @@ const theme = {
   
   errorColor: '#E8666D',
   warningColor: '#f68e56',
-  borderColor: '#556672',
+  buttonColor: '#2D7AEE',
+  disabledColor: '#cecece',
+  borderColor: '#cecece',
   white: '#ffffff',
   black: '#333333',
-  
+
   spacingXXS: '2px',
   spacingXS: '4px',
   spacingS: '8px',
   spacingM: '12px',
   spacingL: '16px',
-  spacingXL: '20px',
+  spacingXL: '30px',
 
   fontFamily: 'Roboto, sans-serif',
 
@@ -31,11 +33,11 @@ const theme = {
   fontSizeL: '16px',
   fontSizeXL: '18px',
 
-  iconSizeXS: '10px',
-  iconSizeS: '12px',
-  iconSizeM: '14px',
-  iconSizeL: '16px',
-  iconSizeXL: '18px',
+  imageSizeXS: '15px',
+  imageSizeS: '30px',
+  imageSizeM: '60px',
+  imageSizeL: '90px',
+  imageSizeXL: '120px',
 
 }
 

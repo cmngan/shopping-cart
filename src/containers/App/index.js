@@ -1,13 +1,13 @@
 import React from 'react'
-import { Row } from 'components'
+import { Row, Col } from 'components'
 import CardDetails from '../CardDetails'
 import Cart from '../Cart'
 
 export default ()  => {
   return (
-    <Row AllL>
-      <Cart />
+    <Row AllL height='-webkit-fill-available'>
       <CardDetails />
+      <Cart />
     </Row>
   )
 }

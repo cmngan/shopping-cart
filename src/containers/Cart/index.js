@@ -1,22 +1,29 @@
 import React from 'react'
-import { Col, Text } from 'components'
-
 import { connect } from 'react-redux'
 
-const Cart = ({ cartItems })  => {
+import Item from './Item'
+import Subtotal from './Subtotal'
+import { Col, Row, Text, Button } from 'components'
+
+const Cart = ({ cartItemIds })  => {
   return (
     <Col flex={1} VM HM>
-      <Text title>Shopping Cart</Text>
-
-      {cartItems.map(({ name }) => <Text>{name}</Text> )}
-
+      <Col flex={1}>
+        <Text h1>Shopping Cart</Text>
+        {cartItemIds.map((id, index) => <Item index={index} key={id} /> )}
+      </Col>
+      <Row spaceBetween TopXL>
+        <Button button onClick={() => alert('Not ready yet.')}>← Continue Shopping</Button>
+        <Subtotal />
+      </Row>
     </Col>
   )
 }
 
 const mapStateToProps = (state, props) => ({
-  cartItems: state.cart.items,
+  cartItemIds: state.cart.items.map(({ id }) => id),
 })
+
 const mapDispatchToProps = null
 
 export default connect(mapStateToProps, mapDispatchToProps)(Cart)
