@@ -43,7 +43,7 @@ export const colorCss = css`
     ${p.black && `color: ${p.theme.black}`}
     ${p.error && `color: ${p.theme.errorColor}`}
     ${p.button && `color: ${p.theme.buttonColor}`}
-    ${p.disabled && css`color: ${p.theme.disabledColor}`}
+    ${p.disabled && css`color: ${p.theme.disabledColor}; opacity: 1; -webkit-text-fill-color: ${p.theme.disabledColor};`}
     ${p.color && `color: ${p.color}`}
 
     ${p.bgPrimary && `background-color: ${p.theme.bgColorPrimary}`}
